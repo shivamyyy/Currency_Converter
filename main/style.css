@@ -1,0 +1,138 @@
+/* Resetting default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Ensuring the main elements take full height and center content */
+html, body {
+    height: 100%; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-color: aquamarine;
+}
+
+/* Styling the main container */
+.main {
+    background-color: #fff;
+    height: 35vh;
+    width: 30vw;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow for better visuals */
+}
+
+/* Image styling */
+img {
+    height: 4vh;
+    width: 2vw;
+    margin: 3px 0; 
+}
+
+/* Input and select field styling */
+input, select {
+    margin: 0px 0; 
+    padding: 5px;
+    height: 3vh;
+    width: 80%; 
+    border: 1px solid black;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+button:hover {
+    background-color: #45a049; 
+}
+
+/* Dropdown container styling */
+.op2 {
+    margin-bottom: 6px;
+    display: flex;
+    gap: 5px;
+    height: 5.2vh;
+    border-radius: 5px; 
+    border: 1px solid;
+}
+
+select {
+    margin-top: 3px;
+    padding: 1px;
+    outline: none;
+    height: 4vh;
+    border: none;
+}
+
+.dropdown {
+    display: flex;
+    gap: 100px;
+}
+
+/* Centering the button */
+.last {
+    justify-content: center;
+    display: flex;
+}
+
+/* Paragraph styling */
+p {
+    margin-bottom: 10px;
+}
+
+.p {
+    margin-top: 15px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .main {
+        width: 80%; /* Adjusted width for tablets and smaller devices */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    img {
+        height: 5vh; /* Increased size for better visibility */
+        width: auto;
+    }
+
+    input, select {
+        width: 100%; /* Input fields take full width */
+    }
+
+    .dropdown {
+        flex-direction: column; /* Stack dropdowns vertically */
+        gap: 10px; /* Adjust gap between elements */
+    }
+
+    .op2 {
+        height: auto; /* Allow flexibility in height */
+    }
+}
+
+@media (max-width: 480px) {
+    .main {
+        padding: 15px; /* Reduced padding for smaller devices */
+        border-radius: 5px; /* Adjusted border radius */
+    }
+
+    button {
+        padding: 8px 15px; /* Adjusted button padding */
+    }
+
+    p {
+        font-size: 14px; /* Reduced font size for better fit */
+    }
+}
+
